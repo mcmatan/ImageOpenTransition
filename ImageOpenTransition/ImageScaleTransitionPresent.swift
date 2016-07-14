@@ -14,10 +14,10 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
     var duration : NSTimeInterval!
     var transitionObjects: Array<ImageScaleTransitionObject>!
     
-    init(transitionObjects : Array<ImageScaleTransitionObject>) {
+    init(transitionObjects : Array<ImageScaleTransitionObject>, duration: NSTimeInterval) {
         self.transitionObjects  = transitionObjects
         super.init()
-        self.duration = self.maximumDuration(self.transitionObjects)
+        self.duration = duration
     }
     
     @objc func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
@@ -48,10 +48,6 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
         
     }
     
-    func animationEnded(transitionCompleted: Bool) {
-        
-    }
-    
 
     func animateTransitionObject(transitionObject : ImageScaleTransitionObject, fromViewController : UIViewController, toViewController : UIViewController, containerView : UIView) {
         
@@ -60,30 +56,44 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
     
         let viewEndFrame = transitionObject.frameToAnimateTo
         
+        assert(transitionObject.viewToAnimateFrom.image != nil, "Trying to animate with no Image")
+        
         let viewToAnimateFromCopy = UIImageView(image: transitionObject.viewToAnimateFrom.image!.copyMe())
         viewToAnimateFromCopy.contentMode = UIViewContentMode.ScaleAspectFill
+        
+        
+        viewToAnimateFromCopy.frame = transitionObject.viewToAnimateFrom.frame
+        
+        let viewStartingCenter = transitionObject.viewToAnimateFrom.superview!.convertPoint(transitionObject.viewToAnimateFrom.center, toView: containerView)
+        viewToAnimateFromCopy.center = viewStartingCenter;
+        
         viewToAnimateFromCopy.clipsToBounds = true
         
-        viewToAnimateFromCopy.frame = transitionObject.frameToAnimateTo
-        let viewStartingCenter = transitionObject.viewToAnimateFrom.superview!.convertPoint(transitionObject.viewToAnimateFrom.center, toView: fromViewController.view)
-        viewToAnimateFromCopy.center = viewStartingCenter;
+        let viewHasRoundedCorders = transitionObject.viewToAnimateFrom.layer.cornerRadius == transitionObject.viewToAnimateFrom.frame.size.height/2;
+        let scaleSize = viewEndFrame.height/viewToAnimateFromCopy.frame.height
+        if (viewHasRoundedCorders == true) {
+            viewToAnimateFromCopy.layer.cornerRadius = viewToAnimateFromCopy.frame.size.height/2
+        }
+        
         containerView.addSubview(viewToAnimateFromCopy)
         
-        UIView.animateWithDuration(self.duration, delay: 0, options: animationOptions, animations: {
-            viewToAnimateFromCopy.frame = viewEndFrame
-        }) { (finished) in
-            if (finished == true) {
-                
-                let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0.3 * Double(NSEC_PER_SEC)))
-                dispatch_after(delayTime, dispatch_get_main_queue()) {
-                    
-                    transitionObject.viewToAnimateTo?.hidden = false
-                    transitionObject.viewToAnimateFrom?.hidden = false
-                    viewToAnimateFromCopy.hidden = true
-
-                }
-                
+        UIView.animateWithDuration(transitionObject.duration, delay: 0, options: animationOptions, animations: {
+            
+            if viewHasRoundedCorders == true {
+                viewToAnimateFromCopy.transform = CGAffineTransformMakeScale(scaleSize, scaleSize)
+                viewToAnimateFromCopy.center = CGPointMake(viewEndFrame.origin.x + (viewEndFrame.width/2), viewEndFrame.origin.y + (viewEndFrame.height/2))
+            } else {
+                viewToAnimateFromCopy.frame = viewEndFrame
             }
+        }) { (finished) in}
+        
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(self.duration * Double(NSEC_PER_SEC)))
+        dispatch_after(delayTime, dispatch_get_main_queue()) {
+            
+            transitionObject.viewToAnimateTo?.hidden = false
+            transitionObject.viewToAnimateFrom?.hidden = false
+            viewToAnimateFromCopy.hidden = true
+            
         }
     }
     

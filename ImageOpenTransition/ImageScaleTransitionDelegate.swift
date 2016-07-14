@@ -24,36 +24,38 @@ import UIKit
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
  */
 
-class ImageScaleTransitionDelegate : NSObject , UIViewControllerTransitioningDelegate, UINavigationControllerDelegate {
+public class ImageScaleTransitionDelegate : NSObject , UIViewControllerTransitioningDelegate, UINavigationControllerDelegate {
     var transitionObjects : Array<ImageScaleTransitionObject>!
     var usingNavigationController : Bool
+    var duration: NSTimeInterval
     
-    init(transitionObjects : Array<ImageScaleTransitionObject>, usingNavigationController : Bool) {
+    public init(transitionObjects : Array<ImageScaleTransitionObject>, usingNavigationController : Bool, duration: NSTimeInterval) {
         self.transitionObjects = transitionObjects
         self.usingNavigationController = usingNavigationController
+        self.duration = duration
     }
     
-    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public final func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
-        let presentAnimation = ImageScaleTransitionPresent(transitionObjects: self.transitionObjects)
+        let presentAnimation = ImageScaleTransitionPresent(transitionObjects: self.transitionObjects, duration : duration)
         return presentAnimation
     }
     
-    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public final func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
-        let dismissAnimation = ImageScaleTransitionDismiss(transitionObjects: self.transitionObjects, usingNavigationController: self.usingNavigationController)
+        let dismissAnimation = ImageScaleTransitionDismiss(transitionObjects: self.transitionObjects, usingNavigationController: self.usingNavigationController, duration : duration)
         return dismissAnimation
     }
     
     //MARK: Navigation controller transition
-    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public final func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         switch operation {
         case .Pop:
-            let dismissAnimation = ImageScaleTransitionDismiss(transitionObjects: self.transitionObjects, usingNavigationController: self.usingNavigationController)
+            let dismissAnimation = ImageScaleTransitionDismiss(transitionObjects: self.transitionObjects, usingNavigationController: self.usingNavigationController, duration : duration)
             return dismissAnimation
         case .Push:
-            let presentAnimation = ImageScaleTransitionPresent(transitionObjects: self.transitionObjects)
+            let presentAnimation = ImageScaleTransitionPresent(transitionObjects: self.transitionObjects, duration : duration)
             return presentAnimation
         case .None:
             return nil
