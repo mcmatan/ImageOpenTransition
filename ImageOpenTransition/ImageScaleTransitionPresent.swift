@@ -36,15 +36,11 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
             self.animateTransitionObject(transitionObject, fromViewController: fromViewController!, toViewController: toViewController!, containerView: containerView!)
         }
         
-            let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(self.duration/2 * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue()) {
-            
-            UIView.animateWithDuration(self.duration/2, animations: {
+            UIView.animateWithDuration(self.duration, animations: {
                 toViewController?.view.alpha = 1.0
                 }, completion: { (finish) in
                       transitionContext.completeTransition(true)
             })
-        }
         
     }
     
