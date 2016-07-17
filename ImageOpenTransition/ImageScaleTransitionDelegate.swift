@@ -28,6 +28,7 @@ public class ImageScaleTransitionDelegate : NSObject , UIViewControllerTransitio
     var transitionObjects : Array<ImageScaleTransitionObject>!
     var usingNavigationController : Bool
     var duration: NSTimeInterval
+    var fadeOutAnimationDuration = 0.3 //After animation happends, this is the fade out of the image copy.
     
     public init(transitionObjects : Array<ImageScaleTransitionObject>, usingNavigationController : Bool, duration: NSTimeInterval) {
         self.transitionObjects = transitionObjects
@@ -36,15 +37,11 @@ public class ImageScaleTransitionDelegate : NSObject , UIViewControllerTransitio
     }
     
     public final func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        
-        let presentAnimation = ImageScaleTransitionPresent(transitionObjects: self.transitionObjects, duration : duration)
-        return presentAnimation
+        return self.createImageScaleTransitionPresent()
     }
     
     public final func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        
-        let dismissAnimation = ImageScaleTransitionDismiss(transitionObjects: self.transitionObjects, usingNavigationController: self.usingNavigationController, duration : duration)
-        return dismissAnimation
+        return self.createImageScaleTransitionDismiss()
     }
     
     //MARK: Navigation controller transition
@@ -52,13 +49,19 @@ public class ImageScaleTransitionDelegate : NSObject , UIViewControllerTransitio
         
         switch operation {
         case .Pop:
-            let dismissAnimation = ImageScaleTransitionDismiss(transitionObjects: self.transitionObjects, usingNavigationController: self.usingNavigationController, duration : duration)
-            return dismissAnimation
+            return self.createImageScaleTransitionDismiss()
         case .Push:
-            let presentAnimation = ImageScaleTransitionPresent(transitionObjects: self.transitionObjects, duration : duration)
-            return presentAnimation
+            return self.createImageScaleTransitionPresent()
         case .None:
             return nil
         }
+    }
+    
+    internal func createImageScaleTransitionDismiss()->ImageScaleTransitionDismiss {
+        return  ImageScaleTransitionDismiss(transitionObjects: self.transitionObjects, usingNavigationController: self.usingNavigationController, duration : duration, fadeOutAnimationDuration : self.fadeOutAnimationDuration)
+    }
+    
+    internal func createImageScaleTransitionPresent()->ImageScaleTransitionPresent {
+        return ImageScaleTransitionPresent(transitionObjects: self.transitionObjects, duration : duration, fadeOutAnimationDuration : self.fadeOutAnimationDuration)
     }
 }

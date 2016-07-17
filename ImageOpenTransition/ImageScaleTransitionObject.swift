@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+//Should add init for only frame, and check if all works.
+
 public class ImageScaleTransitionObject : NSObject {
     internal weak var viewToAnimateFrom : UIImageView!
     internal var frameToAnimateTo : CGRect

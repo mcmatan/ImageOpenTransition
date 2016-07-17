@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED1CF32C1D3BA6C800FE7B68 /* ImageScaleTransitionExntentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1CF32B1D3BA6C800FE7B68 /* ImageScaleTransitionExntentions.swift */; };
 		ED409CFB1D364F38002C50A4 /* ImageOpenTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = ED409CFA1D364F38002C50A4 /* ImageOpenTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED409D021D364F38002C50A4 /* ImageOpenTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED409CF71D364F38002C50A4 /* ImageOpenTransition.framework */; };
 		ED409D071D364F38002C50A4 /* ImageOpenTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED409D061D364F38002C50A4 /* ImageOpenTransitionTests.swift */; };
@@ -16,7 +17,6 @@
 		ED409D1D1D364F8E002C50A4 /* ImageScaleTransitionPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED409D191D364F8E002C50A4 /* ImageScaleTransitionPresent.swift */; };
 		ED409D1E1D364F8E002C50A4 /* ImageScaleTransitionDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED409D1A1D364F8E002C50A4 /* ImageScaleTransitionDismiss.swift */; };
 		ED409D1F1D364F8E002C50A4 /* ImageScaleTransitionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED409D1B1D364F8E002C50A4 /* ImageScaleTransitionObject.swift */; };
-		ED409D211D364F93002C50A4 /* imageExtnetions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED409D201D364F93002C50A4 /* imageExtnetions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED1CF32B1D3BA6C800FE7B68 /* ImageScaleTransitionExntentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScaleTransitionExntentions.swift; sourceTree = "<group>"; };
 		ED409CF71D364F38002C50A4 /* ImageOpenTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageOpenTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED409CFA1D364F38002C50A4 /* ImageOpenTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageOpenTransition.h; sourceTree = "<group>"; };
 		ED409CFC1D364F38002C50A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		ED409D191D364F8E002C50A4 /* ImageScaleTransitionPresent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScaleTransitionPresent.swift; sourceTree = "<group>"; };
 		ED409D1A1D364F8E002C50A4 /* ImageScaleTransitionDismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScaleTransitionDismiss.swift; sourceTree = "<group>"; };
 		ED409D1B1D364F8E002C50A4 /* ImageScaleTransitionObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScaleTransitionObject.swift; sourceTree = "<group>"; };
-		ED409D201D364F93002C50A4 /* imageExtnetions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageExtnetions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +91,7 @@
 				ED409D191D364F8E002C50A4 /* ImageScaleTransitionPresent.swift */,
 				ED409D1A1D364F8E002C50A4 /* ImageScaleTransitionDismiss.swift */,
 				ED409D1B1D364F8E002C50A4 /* ImageScaleTransitionObject.swift */,
+				ED1CF32B1D3BA6C800FE7B68 /* ImageScaleTransitionExntentions.swift */,
 				ED409D131D364F72002C50A4 /* Exntetions */,
 				ED409D111D364F67002C50A4 /* Ether */,
 			);
@@ -118,7 +119,6 @@
 		ED409D131D364F72002C50A4 /* Exntetions */ = {
 			isa = PBXGroup;
 			children = (
-				ED409D201D364F93002C50A4 /* imageExtnetions.swift */,
 			);
 			name = Exntetions;
 			sourceTree = "<group>";
@@ -234,8 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED409D1F1D364F8E002C50A4 /* ImageScaleTransitionObject.swift in Sources */,
+				ED1CF32C1D3BA6C800FE7B68 /* ImageScaleTransitionExntentions.swift in Sources */,
 				ED409D1C1D364F8E002C50A4 /* ImageScaleTransitionDelegate.swift in Sources */,
-				ED409D211D364F93002C50A4 /* imageExtnetions.swift in Sources */,
 				ED409D1D1D364F8E002C50A4 /* ImageScaleTransitionPresent.swift in Sources */,
 				ED409D1E1D364F8E002C50A4 /* ImageScaleTransitionDismiss.swift in Sources */,
 			);
@@ -425,6 +425,7 @@
 				ED409D0D1D364F38002C50A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED409D0E1D364F38002C50A4 /* Build configuration list for PBXNativeTarget "ImageOpenTransitionTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +434,7 @@
 				ED409D101D364F38002C50A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
