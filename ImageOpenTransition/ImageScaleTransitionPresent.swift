@@ -41,7 +41,7 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
         toViewController!.view.alpha = alphaZero
         containerView!.addSubview((toViewController!.view)!)
         
-        if self.usingNavigationController == true {
+        if self.usingNavigationController == true && toViewController?.navigationController?.navigationBar.translucent == false {
             toViewController!.view.frame.origin.y += (toViewController?.heightOfNavigationControllerAndStatusAtViewController())!
         }
         
@@ -65,14 +65,16 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
 
     func animateTransitionObject(transitionObject : ImageScaleTransitionObject, fromViewController : UIViewController, toViewController : UIViewController, containerView : UIView) {
         
-        transitionObject.viewToAnimateTo?.hidden = true
+        transitionObject.viewToAnimateTo.hidden = true
         transitionObject.viewToAnimateFrom.hidden = true
     
         
-        var viewEndFrame = transitionObject.frameToAnimateTo
-        if let isImageToAnimateTo = transitionObject.viewToAnimateTo {
-            viewEndFrame = toViewController.view!.convertRect(isImageToAnimateTo.frame, toView: containerView)
+        var viewEndFrame = toViewController.view!.convertRect(transitionObject.viewToAnimateTo.frame, toView: containerView)
+        if let isFrameToAnimateTo = transitionObject.frameToAnimateTo {
+            viewEndFrame = isFrameToAnimateTo
         }
+        
+        
     
         assert(transitionObject.viewToAnimateFrom.image != nil, "Trying to animate with no Image")
         
@@ -104,12 +106,9 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
         let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64((transitionObject.duration + fadeOutAnimationDelay) * Double(NSEC_PER_SEC)))
         dispatch_after(delayTime, dispatch_get_main_queue()) {
             
-            UIView.animateWithDuration(self.fadeOutAnimationDuration, animations: {
-                viewToAnimateFromCopy.alpha = self.alphaZero;
-                }, completion: { (done) in
-                    transitionObject.viewToAnimateTo?.hidden = false
-                    transitionObject.viewToAnimateFrom?.hidden = false
-            })
+            viewToAnimateFromCopy.removeFromSuperview()
+            transitionObject.viewToAnimateTo.hidden = false
+            transitionObject.viewToAnimateFrom?.hidden = false
             
             
         }
