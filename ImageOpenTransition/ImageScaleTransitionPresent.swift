@@ -17,12 +17,14 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
     let alphaZero : CGFloat = 0
     let fadeOutAnimationDelay : NSTimeInterval
     let fromViewControllerScaleAnimation : CGFloat
+    let usingNavigationController : Bool
     
-    init(transitionObjects : Array<ImageScaleTransitionObject>, duration: NSTimeInterval, fadeOutAnimationDuration : NSTimeInterval, fadeOutAnimationDelay : NSTimeInterval, fromViewControllerScaleAnimation : CGFloat) {
+    init(transitionObjects : Array<ImageScaleTransitionObject>, duration: NSTimeInterval, fadeOutAnimationDuration : NSTimeInterval, fadeOutAnimationDelay : NSTimeInterval, fromViewControllerScaleAnimation : CGFloat, usingNavigationController : Bool) {
         self.transitionObjects  = transitionObjects
         self.fadeOutAnimationDuration = fadeOutAnimationDuration
         self.fadeOutAnimationDelay = fadeOutAnimationDelay
         self.fromViewControllerScaleAnimation = fromViewControllerScaleAnimation
+        self.usingNavigationController = usingNavigationController
         super.init()
         self.duration = duration
     }
@@ -38,6 +40,10 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
         
         toViewController!.view.alpha = alphaZero
         containerView!.addSubview((toViewController!.view)!)
+        
+        if self.usingNavigationController == true {
+            toViewController!.view.frame.origin.y += (toViewController?.heightOfNavigationControllerAndStatusAtViewController())!
+        }
         
         for transitionObject in self.transitionObjects {
             self.animateTransitionObject(transitionObject, fromViewController: fromViewController!, toViewController: toViewController!, containerView: containerView!)

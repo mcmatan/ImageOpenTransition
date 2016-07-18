@@ -65,6 +65,6 @@ public class ImageScaleTransitionDelegate : NSObject , UIViewControllerTransitio
     }
     
     internal func createImageScaleTransitionPresent()->ImageScaleTransitionPresent {
-        return ImageScaleTransitionPresent(transitionObjects: self.transitionObjects, duration : duration, fadeOutAnimationDuration : self.fadeOutAnimationDuration, fadeOutAnimationDelay: self.fadeOutAnimationDelayPresent, fromViewControllerScaleAnimation : self.fromViewControllerScaleAnimation)
+        return ImageScaleTransitionPresent(transitionObjects: self.transitionObjects, duration : duration, fadeOutAnimationDuration : self.fadeOutAnimationDuration, fadeOutAnimationDelay: self.fadeOutAnimationDelayPresent, fromViewControllerScaleAnimation : self.fromViewControllerScaleAnimation, usingNavigationController: self.usingNavigationController)
     }
 }
