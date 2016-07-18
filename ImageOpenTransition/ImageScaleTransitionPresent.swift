@@ -15,10 +15,14 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
     var transitionObjects: Array<ImageScaleTransitionObject>!
     let fadeOutAnimationDuration : NSTimeInterval
     let alphaZero : CGFloat = 0
+    let fadeOutAnimationDelay : NSTimeInterval
+    let fromViewControllerScaleAnimation : CGFloat
     
-    init(transitionObjects : Array<ImageScaleTransitionObject>, duration: NSTimeInterval, fadeOutAnimationDuration : NSTimeInterval) {
+    init(transitionObjects : Array<ImageScaleTransitionObject>, duration: NSTimeInterval, fadeOutAnimationDuration : NSTimeInterval, fadeOutAnimationDelay : NSTimeInterval, fromViewControllerScaleAnimation : CGFloat) {
         self.transitionObjects  = transitionObjects
         self.fadeOutAnimationDuration = fadeOutAnimationDuration
+        self.fadeOutAnimationDelay = fadeOutAnimationDelay
+        self.fromViewControllerScaleAnimation = fromViewControllerScaleAnimation
         super.init()
         self.duration = duration
     }
@@ -38,11 +42,16 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
         for transitionObject in self.transitionObjects {
             self.animateTransitionObject(transitionObject, fromViewController: fromViewController!, toViewController: toViewController!, containerView: containerView!)
         }
+
+        let scaleUp = CGAffineTransformMakeScale(self.fromViewControllerScaleAnimation, self.fromViewControllerScaleAnimation);
+        let scaleDown = CGAffineTransformMakeScale(1.0, 1.0);
         
             UIView.animateWithDuration(self.duration, animations: {
                 toViewController?.view.alpha = 1.0
+                fromViewController?.view.transform = scaleUp
                 }, completion: { (finish) in
-                      transitionContext.completeTransition(true)
+                    fromViewController?.view.transform = scaleDown
+                    transitionContext.completeTransition(true)
             })
         
     }
@@ -86,7 +95,7 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
             }
         }) { (finished) in}
         
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(self.duration * Double(NSEC_PER_SEC)))
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64((transitionObject.duration + fadeOutAnimationDelay) * Double(NSEC_PER_SEC)))
         dispatch_after(delayTime, dispatch_get_main_queue()) {
             
             UIView.animateWithDuration(self.fadeOutAnimationDuration, animations: {
@@ -94,7 +103,6 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
                 }, completion: { (done) in
                     transitionObject.viewToAnimateTo?.hidden = false
                     transitionObject.viewToAnimateFrom?.hidden = false
-                    viewToAnimateFromCopy.hidden = true
             })
             
             

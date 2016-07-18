@@ -16,11 +16,13 @@ class ImageScaleTransitionDismiss : NSObject , UIViewControllerAnimatedTransitio
     var usingNavigationController : Bool
     let fadeOutAnimationDuration : NSTimeInterval
     let alphaZero : CGFloat = 0
+    let fadeOutAnimationDelay : NSTimeInterval
 
-    init(transitionObjects : Array<ImageScaleTransitionObject>, usingNavigationController : Bool, duration: NSTimeInterval, fadeOutAnimationDuration : NSTimeInterval) {
+    init(transitionObjects : Array<ImageScaleTransitionObject>, usingNavigationController : Bool, duration: NSTimeInterval, fadeOutAnimationDuration : NSTimeInterval, fadeOutAnimationDelay : NSTimeInterval) {
         self.transitionObjects  = transitionObjects
         self.usingNavigationController = usingNavigationController
         self.fadeOutAnimationDuration = fadeOutAnimationDuration
+        self.fadeOutAnimationDelay = fadeOutAnimationDelay
         super.init()
         self.duration = duration
     }
@@ -68,14 +70,12 @@ class ImageScaleTransitionDismiss : NSObject , UIViewControllerAnimatedTransitio
         transitionObject.viewToAnimateFrom.hidden = true
 
         let animationDuration = transitionObject.duration
-        var viewEndFrame = transitionObject.viewToAnimateFrom.superview!.convertRect(transitionObject.viewToAnimateFrom.frame, toView: containerView)
         
         var viewToAnimateFromCopy = self.getImageFromImageScaleTransitionObject(transitionObject)
-
-        if let isViewToAnimateTo = transitionObject.viewToAnimateTo?.frame {
-            viewToAnimateFromCopy.frame = isViewToAnimateTo
-        } else {
-            viewToAnimateFromCopy.frame = transitionObject.frameToAnimateTo
+        viewToAnimateFromCopy.frame = self.startFrame(transitionObject)
+        var viewEndFrame = self.endFrame(transitionObject, containerView: containerView).frame
+        if self.endFrame(transitionObject, containerView: containerView).hasSet == false {
+            viewToAnimateFromCopy.hidden = true
         }
 
         
@@ -97,7 +97,7 @@ class ImageScaleTransitionDismiss : NSObject , UIViewControllerAnimatedTransitio
             }
             }) { (finished) in}
         
-       let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(self.duration * Double(NSEC_PER_SEC)))
+       let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64((transitionObject.duration + self.fadeOutAnimationDelay) * Double(NSEC_PER_SEC)))
         dispatch_after(delayTime, dispatch_get_main_queue()) {
             
             UIView.animateWithDuration(self.fadeOutAnimationDuration, animations: {
@@ -105,7 +105,6 @@ class ImageScaleTransitionDismiss : NSObject , UIViewControllerAnimatedTransitio
                 }, completion: { (done) in
                     transitionObject.viewToAnimateTo?.hidden = false
                     transitionObject.viewToAnimateFrom?.hidden = false
-                    viewToAnimateFromCopy.hidden = true
             })
             
         }
@@ -129,5 +128,24 @@ class ImageScaleTransitionDismiss : NSObject , UIViewControllerAnimatedTransitio
         viewToAnimateFromCopy.clipsToBounds = true
         
         return viewToAnimateFromCopy
+    }
+    
+    func startFrame(transitionObject : ImageScaleTransitionObject)->CGRect {
+        if let isViewToAnimateTo = transitionObject.viewToAnimateTo?.frame {
+            return isViewToAnimateTo
+        } else {
+            return transitionObject.frameToAnimateTo
+        }
+    }
+    
+    func endFrame(transitionObject : ImageScaleTransitionObject, containerView : UIView)->(frame : CGRect , hasSet : Bool) {
+        var viewEndFrame = transitionObject.viewToAnimateFrom.frame
+        if let fromViewSuperExists = transitionObject.viewToAnimateFrom.superview {
+            viewEndFrame = transitionObject.viewToAnimateFrom.superview!.convertRect(transitionObject.viewToAnimateFrom.frame, toView: containerView)
+            return (viewEndFrame, true)
+        } else {
+            print("Error: The view you are trying to animate to in dissmess, has no super view")
+        }
+        return (viewEndFrame, false)
     }
 }

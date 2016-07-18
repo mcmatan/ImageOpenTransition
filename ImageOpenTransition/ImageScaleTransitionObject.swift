@@ -12,7 +12,7 @@ import UIKit
 //Should add init for only frame, and check if all works.
 
 public class ImageScaleTransitionObject : NSObject {
-    internal weak var viewToAnimateFrom : UIImageView!
+    internal var viewToAnimateFrom : UIImageView!
     internal var frameToAnimateTo : CGRect
     internal var viewToAnimateTo :UIImageView? // This is optional, if you do require this, your view will be hidden/unhidden to suite the transition better.
     internal var duration : NSTimeInterval
