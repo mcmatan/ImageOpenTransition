@@ -1,0 +1,16 @@
+PODS:
+  - ImageOpenTransition (0.0.1)
+
+DEPENDENCIES:
+  - ImageOpenTransition (from `../`)
+
+EXTERNAL SOURCES:
+  ImageOpenTransition:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ImageOpenTransition: 9e36fca2e5aa6a920b82025276c69e42bd2a0776
+
+PODFILE CHECKSUM: 5677fb9d53200bacf12dc692354313511ef77f76
+
+COCOAPODS: 1.0.0
