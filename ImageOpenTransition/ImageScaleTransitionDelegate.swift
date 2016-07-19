@@ -28,10 +28,10 @@ public class ImageScaleTransitionDelegate : NSObject , UIViewControllerTransitio
     var transitionObjects : Array<ImageScaleTransitionObject>!
     var usingNavigationController : Bool
     var duration: NSTimeInterval
-    var fadeOutAnimationDuration : NSTimeInterval = 0.1 //After animation happends, this is the fade out of the image copy.
-    var fadeOutAnimationDelayPresent : NSTimeInterval = 0.1 //After animation happends, this is the delay before fade out of the image, use if original image takes time to load.
-    var fadeOutAnimationDelayDismiss : NSTimeInterval = 0.1 //After animation happends, this is the delay before fade out of the image, use if original image takes time to load.
-    var fromViewControllerScaleAnimation : CGFloat = 1.0 //When animation opens viewController, the view has a scale animation to make it zoom in. Make 1.0 for turning off.
+    public var fadeOutAnimationDuration : NSTimeInterval = 0.1 //After animation happends, this is the fade out of the image copy.
+    public var fadeOutAnimationDelayPresent : NSTimeInterval = 0.1 //After animation happends, this is the delay before fade out of the image, use if original image takes time to load.
+    public var fadeOutAnimationDelayDismiss : NSTimeInterval = 0.1 //After animation happends, this is the delay before fade out of the image, use if original image takes time to load.
+    public var fromViewControllerScaleAnimation : CGFloat = 1.0 //When animation opens viewController, the view has a scale animation to make it zoom in. Make 1.0 for turning off.
     
     public init(transitionObjects : Array<ImageScaleTransitionObject>, usingNavigationController : Bool, duration: NSTimeInterval) {
         self.transitionObjects = transitionObjects
