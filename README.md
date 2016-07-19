@@ -5,6 +5,7 @@
 <img src="https://s31.postimg.org/6x43rb7h7/Icon_Image_Scale_Transition_3x.png" alt="ImageOpenTransition Icon" align="center" />
 
 ## Description
+Beautiful and precise transitions between ViewControllers written in Swift.
 
 * **Supports multiple images transition**
 
