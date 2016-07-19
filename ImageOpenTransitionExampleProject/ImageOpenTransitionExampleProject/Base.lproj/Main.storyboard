@@ -62,7 +62,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contrary to popular belief" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOO-hs-7DP">
                                                     <rect key="frame" x="91" y="15" width="196" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTA-z9-q5C">
@@ -126,17 +126,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFr-Dt-poA">
+                                <rect key="frame" x="281" y="491" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="btnDoneTaped:" destination="4B1-jU-NUu" eventType="touchUpInside" id="gLi-pg-swB"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="700" image="windows-xp-background-image-jpg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CMv-ZL-aeq">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="M7S-ap-zq5"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crossroads-destiny-clip-4x3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dgv-ZD-yYm">
-                                <rect key="frame" x="270" y="160" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="EhG-PS-Lvm"/>
-                                    <constraint firstAttribute="width" constant="60" id="P6u-aO-Fep"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwu-Gg-gls">
@@ -145,13 +145,13 @@
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFr-Dt-poA">
-                                <rect key="frame" x="281" y="491" width="39" height="30"/>
-                                <state key="normal" title="Close"/>
-                                <connections>
-                                    <action selector="btnDoneTaped:" destination="4B1-jU-NUu" eventType="touchUpInside" id="gLi-pg-swB"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crossroads-destiny-clip-4x3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dgv-ZD-yYm">
+                                <rect key="frame" x="270" y="160" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EhG-PS-Lvm"/>
+                                    <constraint firstAttribute="width" constant="60" id="P6u-aO-Fep"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -160,12 +160,22 @@
                             <constraint firstItem="dgv-ZD-yYm" firstAttribute="centerX" secondItem="2Ko-8d-F87" secondAttribute="centerX" id="BVQ-x3-Yuy"/>
                             <constraint firstItem="SFr-Dt-poA" firstAttribute="centerX" secondItem="2Ko-8d-F87" secondAttribute="centerX" id="Enp-Ik-hIb"/>
                             <constraint firstItem="Zwu-Gg-gls" firstAttribute="top" secondItem="dgv-ZD-yYm" secondAttribute="bottom" constant="34" id="IpN-Dn-XTf"/>
-                            <constraint firstItem="CMv-ZL-aeq" firstAttribute="leading" secondItem="2Ko-8d-F87" secondAttribute="leadingMargin" constant="-20" id="NFy-AL-seg"/>
+                            <constraint firstAttribute="trailing" secondItem="CMv-ZL-aeq" secondAttribute="trailing" id="Jwl-vU-y3J"/>
+                            <constraint firstItem="CMv-ZL-aeq" firstAttribute="leading" secondItem="2Ko-8d-F87" secondAttribute="leadingMargin" id="NFy-AL-seg"/>
                             <constraint firstItem="SFr-Dt-poA" firstAttribute="top" secondItem="Zwu-Gg-gls" secondAttribute="bottom" constant="57" id="Ozw-QW-kkm"/>
                             <constraint firstItem="dgv-ZD-yYm" firstAttribute="bottom" secondItem="CMv-ZL-aeq" secondAttribute="bottom" multiplier="1.1" id="P25-4c-vG8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CMv-ZL-aeq" secondAttribute="trailing" constant="-20" id="iGD-pV-Kkb"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="CMv-ZL-aeq" secondAttribute="leading" id="fgS-pR-3RL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CMv-ZL-aeq" secondAttribute="trailing" id="iGD-pV-Kkb"/>
+                            <constraint firstAttribute="leading" secondItem="CMv-ZL-aeq" secondAttribute="leading" id="qgz-Oc-3Xc"/>
                             <constraint firstItem="Zwu-Gg-gls" firstAttribute="leading" secondItem="2Ko-8d-F87" secondAttribute="leadingMargin" id="vT8-Na-zX2"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NFy-AL-seg"/>
+                                <exclude reference="fgS-pR-3RL"/>
+                                <exclude reference="iGD-pV-Kkb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="imgAvatar" destination="dgv-ZD-yYm" id="jdq-bI-8sO"/>

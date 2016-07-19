@@ -63,7 +63,7 @@ import ImageOpenTransition
             let transitionObjectAvatar = ImageScaleTransitionObject(viewToAnimateFrom: cell.imgAvater, viewToAnimateTo: vc.imgAvatar, duration: 0.4, frameToAnimateTo: frameToAnimateToAvatar)
             let transitionObjectCover = ImageScaleTransitionObject(viewToAnimateFrom: cell.imgCover, viewToAnimateTo: vc.imgCover, duration: 0.4, frameToAnimateTo: frameToAnimateToCover)
             
-            self.imageScalePresentTransition = ImageScaleTransitionDelegate(transitionObjects: [transitionObjectCover, transitionObjectAvatar], usingNavigationController: usingNavigationController, duration: 0.4)
+            self.imageScalePresentTransition = ImageScaleTransitionDelegate(transitionObjects: [transitionObjectCover ,transitionObjectAvatar], usingNavigationController: usingNavigationController, duration: 0.4)
             
             if usingNavigationController == true {
                 self.navigationController!.delegate = self.imageScalePresentTransition
@@ -73,6 +73,7 @@ import ImageOpenTransition
                 vc.modalPresentationStyle = UIModalPresentationStyle.Custom;
                 self.presentViewController(vc, animated: true, completion: nil)
             }
+            
             
             
             self.tableView.deselectRowAtIndexPath(indexPath, animated: true)

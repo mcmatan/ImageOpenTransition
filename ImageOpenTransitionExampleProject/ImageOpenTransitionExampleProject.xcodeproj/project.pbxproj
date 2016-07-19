@@ -595,10 +595,12 @@
 			baseConfigurationReference = 2E29EE9379FF5618BD27C985 /* Pods-ImageOpenTransitionExampleProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matan Cohen (V88TJNTSQC)";
 				INFOPLIST_FILE = ImageOpenTransitionExampleProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JVID.ImageOpenTransitionExampleProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mc.JVID.ImageOpenTransitionExampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7c603ede-813f-426b-9acf-ecd9208e16cd";
 			};
 			name = Debug;
 		};
@@ -607,10 +609,12 @@
 			baseConfigurationReference = 518866DBD1DD995741FFD88C /* Pods-ImageOpenTransitionExampleProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matan Cohen (V88TJNTSQC)";
 				INFOPLIST_FILE = ImageOpenTransitionExampleProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = JVID.ImageOpenTransitionExampleProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mc.JVID.ImageOpenTransitionExampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7c603ede-813f-426b-9acf-ecd9208e16cd";
 			};
 			name = Release;
 		};

@@ -5,7 +5,8 @@ target 'ImageOpenTransitionExampleProject' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-pod 'ImageOpenTransition', :path => '../'
+#pod 'ImageOpenTransition', :path => '../'
+pod 'ImageOpenTransition'
 
   # Pods for ImageOpenTransitionExampleProject
 
