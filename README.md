@@ -23,7 +23,7 @@ Beautiful and precise transitions between ViewControllers images written in Swif
 
 
 
-```objectivec
+```Swift
 
 let transitionObjectAvatar = ImageScaleTransitionObject(viewToAnimateFrom: cell.imgAvater,
   viewToAnimateTo: vc.imgAvatar,
