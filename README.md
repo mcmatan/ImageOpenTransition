@@ -19,12 +19,7 @@ Beautiful and precise transitions between ViewControllers images written in Swif
 <img src="https://media.giphy.com/media/z4Y5tuT7LUISI/giphy.gif" alt="ImageOpenTransition Icon" align="center" />
 <img src="https://media.giphy.com/media/P8uMGwNDxsr04/giphy.gif" alt="ImageOpenTransition Icon" align="center" />
 
-## Usage
-
-* Create "ImageScaleTransitionObject" For each image you woould like to animate.
-Pass the UIImageView to animate from, and the UIImageView to animate to.
-
-
+## Code
 
 
 
@@ -44,8 +39,10 @@ self.imageScalePresentTransition = ImageScaleTransitionDelegate(transitionObject
   usingNavigationController: usingNavigationController, duration: 0.4)
 ```
 
+## Usage
 
-
+* Create "ImageScaleTransitionObject" For each image you woould like to animate.
+Pass the UIImageView to animate from, and the UIImageView to animate to.
 
 
 * You must pass the ImageView you would like to animate to. You can or allocate it before the controller is presented,
