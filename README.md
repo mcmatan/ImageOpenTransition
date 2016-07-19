@@ -4,6 +4,7 @@
 
 <img src="https://s31.postimg.org/6x43rb7h7/Icon_Image_Scale_Transition_3x.png" alt="ImageOpenTransition Icon" align="center" />
 
+
 ## Description
 Beautiful and precise transitions between ViewControllers images written in Swift.
 
@@ -16,6 +17,7 @@ Beautiful and precise transitions between ViewControllers images written in Swif
 ## Demo
 
 <img src="https://media.giphy.com/media/z4Y5tuT7LUISI/giphy.gif" alt="ImageOpenTransition Icon" align="center" />
+<img src="https://media.giphy.com/media/P8uMGwNDxsr04/giphy.gif" alt="ImageOpenTransition Icon" align="center" />
 
 ## Usage
 
