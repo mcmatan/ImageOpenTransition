@@ -10,6 +10,7 @@
 		C6E5E72C054EDBA4804AA370 /* Pods_ImageOpenTransitionExampleProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C59E0331E3F59DCB75D8BCA /* Pods_ImageOpenTransitionExampleProjectTests.framework */; };
 		C9DF3B4CA2B66110C6CAEE8D /* Pods_ImageOpenTransitionExampleProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0ADE70B50A2B6C92CA32C7 /* Pods_ImageOpenTransitionExampleProjectUITests.framework */; };
 		CF3C01F34F2E5101530CB611 /* Pods_ImageOpenTransitionExampleProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27AC4250E6063F948A639FF /* Pods_ImageOpenTransitionExampleProject.framework */; };
+		ED317F971D3F6561002470BF /* NoStoryBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED317F961D3F6561002470BF /* NoStoryBoardViewController.swift */; };
 		ED409D741D377006002C50A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED409D731D377006002C50A4 /* AppDelegate.swift */; };
 		ED409D791D377006002C50A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED409D771D377006002C50A4 /* Main.storyboard */; };
 		ED409D7B1D377006002C50A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED409D7A1D377006002C50A4 /* Assets.xcassets */; };
@@ -50,6 +51,7 @@
 		D27AC4250E6063F948A639FF /* Pods_ImageOpenTransitionExampleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageOpenTransitionExampleProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA12A27811F35BC68BAE7DA7 /* Pods-ImageOpenTransitionExampleProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageOpenTransitionExampleProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageOpenTransitionExampleProjectTests/Pods-ImageOpenTransitionExampleProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED0ADE70B50A2B6C92CA32C7 /* Pods_ImageOpenTransitionExampleProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageOpenTransitionExampleProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED317F961D3F6561002470BF /* NoStoryBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoStoryBoardViewController.swift; sourceTree = "<group>"; };
 		ED409D701D377006002C50A4 /* ImageOpenTransitionExampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageOpenTransitionExampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED409D731D377006002C50A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED409D781D377006002C50A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				ED409DA11D3770B6002C50A4 /* ViewController.swift */,
 				ED409DA21D3770B6002C50A4 /* ViewControllerCell.swift */,
 				ED409DA31D3770B6002C50A4 /* DetailsViewController.swift */,
+				ED317F961D3F6561002470BF /* NoStoryBoardViewController.swift */,
 				ED409D771D377006002C50A4 /* Main.storyboard */,
 				ED409D7A1D377006002C50A4 /* Assets.xcassets */,
 				ED409D7C1D377006002C50A4 /* LaunchScreen.storyboard */,
@@ -449,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED317F971D3F6561002470BF /* NoStoryBoardViewController.swift in Sources */,
 				ED409DA51D3770B6002C50A4 /* ViewControllerCell.swift in Sources */,
 				ED409DA41D3770B6002C50A4 /* ViewController.swift in Sources */,
 				ED409D741D377006002C50A4 /* AppDelegate.swift in Sources */,
