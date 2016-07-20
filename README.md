@@ -62,6 +62,7 @@ You can use it in cases the UIImageView you would like to animate to, has no fra
 
 ## Installation
 
+#### Cocoapods
 **ImageScaleTransition** is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
@@ -69,7 +70,13 @@ it, simply add the following line to your Podfile:
 pod 'ImageScaleTransition'
 ```
 
-Dont forget to enable icloud at Capabilities, for file sharing.
+#### Manually
+
+1. Download and drop All 5 .swift files to your project:
+
+"ImageScaleTransitionDelegate.swift", "ImageScaleTransitionDismiss.swift", "ImageScaleTransitionExntentions.swift", "ImageScaleTransitionObject.swift","ImageScaleTransitionPresent.swift".
+
+2. Congratulations!
 
 ## Author
 
