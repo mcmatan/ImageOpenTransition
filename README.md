@@ -74,7 +74,7 @@ pod 'ImageScaleTransition'
 
 1. Download and drop All 5 .swift files to your project:
 
-"ImageScaleTransitionDelegate.swift", "ImageScaleTransitionDismiss.swift", "ImageScaleTransitionExntentions.swift", "ImageScaleTransitionObject.swift","ImageScaleTransitionPresent.swift".
+ImageScaleTransitionDelegate.swift, ImageScaleTransitionDismiss.swift, ImageScaleTransitionExntentions.swift, ImageScaleTransitionObject.swift,ImageScaleTransitionPresent.swift.
 
 2. Congratulations!
 
