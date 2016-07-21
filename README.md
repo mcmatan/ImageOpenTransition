@@ -25,12 +25,13 @@ Beautiful and precise transitions between ViewControllers images written in Swif
 
 ```Swift
 
+//Example of explicitly defining a final frame:
 let transitionObjectAvatar = ImageScaleTransitionObject(viewToAnimateFrom: cell.imgAvater,
   viewToAnimateTo: vc.imgAvatar,
   duration: 0.4, 
   frameToAnimateTo: frameToAnimateToAvatar)
 
-//Example of explicitly define a final frame:
+//Example of not defining a final frame:
 let transitionObjectCover = ImageScaleTransitionObject(viewToAnimateFrom: cell.imgCover,
   viewToAnimateTo: vc.imgCover,
   duration: 0.4)
