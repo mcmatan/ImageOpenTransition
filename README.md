@@ -2,7 +2,7 @@
 
 [![Pod version](https://img.shields.io/cocoapods/v/ImageOpenTransition.svg?style=flat)](http://cocoadocs.org/docsets/ImageOpenTransition)
 
-<img src="https://s31.postimg.org/6x43rb7h7/Icon_Image_Scale_Transition_3x.png" alt="ImageOpenTransition Icon" align="center" />
+<img src="https://s31.postimg.org/wc8lnw00r/Icon_Image_Open_Transition_3x.png" alt="ImageOpenTransition Icon" align="center" />
 
 
 ## Description
