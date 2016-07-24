@@ -50,14 +50,12 @@ class ImageScaleTransitionDismiss : NSObject , UIViewControllerAnimatedTransitio
         UIView.animateWithDuration(self.duration, animations: {
             fromViewController?.view.alpha = self.alphaZero
             }, completion: nil)
-
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(self.duration * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue()) {
-
+        
+        afterDelay(self.duration) { 
             UIView.animateWithDuration(self.duration/2, animations: {
                 toViewController?.view.alpha = 1.0
                 }, completion: { (finish) in
-                        transitionContext.completeTransition(true)
+                    transitionContext.completeTransition(true)
             })
         }
     }
@@ -97,14 +95,11 @@ class ImageScaleTransitionDismiss : NSObject , UIViewControllerAnimatedTransitio
             }
             }) { (finished) in}
         
-       let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64((transitionObject.duration + self.fadeOutAnimationDelay) * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue()) {
-        
+
+        afterDelay((transitionObject.duration + self.fadeOutAnimationDelay)) { 
             viewToAnimateFromCopy.removeFromSuperview()
             transitionObject.viewToAnimateTo.hidden = false
             transitionObject.viewToAnimateFrom?.hidden = false
-            
-            
         }
     }
 
