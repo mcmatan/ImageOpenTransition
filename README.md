@@ -2,7 +2,7 @@
 
 [![Pod version](https://img.shields.io/cocoapods/v/ImageOpenTransition.svg?style=flat)](http://cocoadocs.org/docsets/ImageOpenTransition)
 
-<img src="https://s31.postimg.org/wc8lnw00r/Icon_Image_Open_Transition_3x.png" alt="ImageOpenTransition Icon" align="center" />
+<p align = "center"><img src="https://s31.postimg.org/wc8lnw00r/Icon_Image_Open_Transition_3x.png" alt="ImageOpenTransition Icon"/></p>
 
 
 ## Description
@@ -16,8 +16,8 @@ Beautiful and precise transitions between ViewControllers images written in Swif
 
 ## Demo
 
-<img src="https://media.giphy.com/media/z4Y5tuT7LUISI/giphy.gif" alt="ImageOpenTransition Icon" align="center" />
-<img src="https://media.giphy.com/media/P8uMGwNDxsr04/giphy.gif" alt="ImageOpenTransition Icon" align="center" />
+<p align = "center"><img src="https://media.giphy.com/media/z4Y5tuT7LUISI/giphy.gif" alt="ImageOpenTransition Icon"/>
+<img src="https://media.giphy.com/media/P8uMGwNDxsr04/giphy.gif" alt="ImageOpenTransition Icon" /></p>
 
 ## Code
 
