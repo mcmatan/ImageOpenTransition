@@ -103,14 +103,11 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
             }
         }) { (finished) in}
         
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64((transitionObject.duration + fadeOutAnimationDelay) * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue()) {
-            
+        afterDelay((transitionObject.duration + fadeOutAnimationDelay)) { 
             viewToAnimateFromCopy.removeFromSuperview()
             transitionObject.viewToAnimateTo.hidden = false
             transitionObject.viewToAnimateFrom?.hidden = false
-            
-            
         }
+
     }
 }
