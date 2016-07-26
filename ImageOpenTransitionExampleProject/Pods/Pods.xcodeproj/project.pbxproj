@@ -7,29 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		012E51588EA7DDD9E7DD27DE0F10FEB6 /* ImageScaleTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23FA1CC76765BC84EBE81D7457AE3C5 /* ImageScaleTransitionDelegate.swift */; };
-		087CFDA37FFA1B4BD668B5D1875CCB82 /* ImageOpenTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3F28F07C7710BE397611C73F5003F2 /* ImageOpenTransition-dummy.m */; };
+		00F2E95E5672B17CE0256C2ECFA831E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		105E530D442CAAF5230465239E51AF2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		157EEF746857954D1A443EA6452503B9 /* Pods-ImageOpenTransitionExampleProjectTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D8D5264D495D26BB8CB22543F1319C /* Pods-ImageOpenTransitionExampleProjectTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1980F11AC0EAC50D89F48294C5DC6866 /* ImageOpenTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A224D5503643A23758CDD2D7CE45A70F /* ImageOpenTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E8FE3CD7D30D3C519AD9DDE11BC9EBA /* ImageScaleTransitionDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C55AD3F6E4E80613F658CB64B0B72C /* ImageScaleTransitionDismiss.swift */; };
+		2B10127A6F77648257C85C1D7358A496 /* ImageOpenTransition-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31B49FDE910AE67A44431F1B69B71ACA /* ImageOpenTransition-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A7F7D11BFB94AEAAB340410B9526AA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		43F0CE61C4484939F1BC7DFE9A48D24A /* crossroads-destiny-clip-4x3.jpg in Sources */ = {isa = PBXBuildFile; fileRef = 1FC864CB321C30C92297FB5BB96DB737 /* crossroads-destiny-clip-4x3.jpg */; };
-		4E85D8BA27D2E5B810D5128830920C44 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = AFE88BDB5F58D21C803063B4E101F9A6 /* Info.plist */; };
-		6D19A47DE724BD7D784EFF362159BC9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
-		6DEC4A028BF7ADECC3AB459A3F3B4EAD /* ImageScaleTransitionExntentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B39BFF41C7C80805CDE2301C7DDB22 /* ImageScaleTransitionExntentions.swift */; };
+		415B30A489D86DC898588D803E9573A7 /* ImageScaleTransitionExntentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C74ACB1234F933B603863375AA9A85 /* ImageScaleTransitionExntentions.swift */; };
+		419E7B72978B9D6332BF8649EED7ADCC /* windows-xp-background-image-jpg.jpg in Sources */ = {isa = PBXBuildFile; fileRef = 5E616E7C34FFE09B90C0A74F7F50EE39 /* windows-xp-background-image-jpg.jpg */; };
+		54162840291FBF1E50D5590E92CB0B43 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7F889BF21CCAE60A35F0EEBE1B6522 /* Delay.swift */; };
+		5668F528C7B25FC773DD7BE8C3A23A09 /* ImageScaleTransitionDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB6CC4DC4A674DE74B084CE412E0423 /* ImageScaleTransitionDismiss.swift */; };
+		67A1812235251D910722E6F9D1F8F1EA /* ImageScaleTransitionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9AAF108EC831B3402D62D1299BA914 /* ImageScaleTransitionObject.swift */; };
 		704CCC8DC783CC22B3F8EC37925484B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
 		77B0FB802B74E8A627730D47B637FB52 /* Pods-ImageOpenTransitionExampleProject-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AD934C4532C3AC42FF054CAD80EFE56 /* Pods-ImageOpenTransitionExampleProject-dummy.m */; };
-		8F023B4E5FB853BBC3F9E13E25014E32 /* windows-xp-background-image-jpg.jpg in Sources */ = {isa = PBXBuildFile; fileRef = 808035BAE4F2F22CD320ED805164D6DB /* windows-xp-background-image-jpg.jpg */; };
-		9BD56F1481731C473D962F338C2E46E6 /* ImageScaleTransitionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C501F4714F69D694E5C50A127CA5F2A3 /* ImageScaleTransitionObject.swift */; };
+		82BD363F1CAFA8A124C1B9D385A73BEA /* ImageScaleTransitionPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECD7FF168667B571C42C204F92BBFD9 /* ImageScaleTransitionPresent.swift */; };
+		8FDCC8A38CF02DBB219D926A78891B97 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		A50E700401A13A9E4D16B731629E546F /* ImageOpenTransition.podspec in Sources */ = {isa = PBXBuildFile; fileRef = 291F01B0276A6B6983C8C587503A3F1A /* ImageOpenTransition.podspec */; };
 		AF941C2D63575E762EA30FF30B98AD50 /* Pods-ImageOpenTransitionExampleProjectUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5864E7812A61438BA27F28C5FF6616B /* Pods-ImageOpenTransitionExampleProjectUITests-dummy.m */; };
-		C2C55E3D3BE88AA6BD735776EA792886 /* ImageOpenTransition.podspec in Sources */ = {isa = PBXBuildFile; fileRef = D34E91E880302638877DC88C36A95DC9 /* ImageOpenTransition.podspec */; };
-		DD8F889C2D60EB279238C6DF3E253A8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		BE4B97DE76E8ACF6E18DACBA349BF61B /* ImageScaleTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F9839754A47335B1867E258117952C /* ImageScaleTransitionDelegate.swift */; };
 		E1B048E5EAD6A286DA4D04A7D66FF65A /* Pods-ImageOpenTransitionExampleProject-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3441F94DBF12CC5D3E1D141681B718A2 /* Pods-ImageOpenTransitionExampleProject-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E69EC8E0A322F8CD5B4736DD8E6979D9 /* ImageScaleTransitionPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C438D298748CD64E4DA10AC2395DB12E /* ImageScaleTransitionPresent.swift */; };
+		E339B3F18FE9067CFA6F2AB24FF7E3E1 /* crossroads-destiny-clip-4x3.jpg in Sources */ = {isa = PBXBuildFile; fileRef = 83419F8448DA2E7C72EFF8D49BEB5D58 /* crossroads-destiny-clip-4x3.jpg */; };
+		EB2FA2004B47085BA0DA995CF2AFF9B6 /* ImageOpenTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = E2030F6642C3AF9712F7A5E87E9D4CE1 /* ImageOpenTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F2657D8732A15C6021190EFA5C9991BE /* Pods-ImageOpenTransitionExampleProjectTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D65A0C7116E486BD2A749155490652 /* Pods-ImageOpenTransitionExampleProjectTests-dummy.m */; };
-		F43832C60CDD78095E36BB4DD598D13F /* ImageOpenTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 56EA4BD3F709B829629936E7159D0AE8 /* ImageOpenTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7E2815DA507BEB92BD90DB5D8F8A6D4 /* ImageOpenTransition-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C00EC609619608D207984B810FB41559 /* ImageOpenTransition-dummy.m */; };
 		FA4BAF8B07C6A27B28AAB9D830D81452 /* Pods-ImageOpenTransitionExampleProjectUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51ADC3E3EB68F522C527EFD4A4BC77D3 /* Pods-ImageOpenTransitionExampleProjectUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCD36945936C30EF133F905A47042991 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 81DCA794CAB8443F05352095D1223BF3 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F88520F250E5E3BBB265D1BDE3DF6E26;
+			remoteGlobalIDString = 5B9213B48AFA628CA495368C2AE30FEB;
 			remoteInfo = ImageOpenTransition;
 		};
 /* End PBXContainerItemProxy section */
@@ -46,55 +47,56 @@
 		034C7CAA0FE541DF2A3DBB05E47D9B8C /* Pods-ImageOpenTransitionExampleProjectUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImageOpenTransitionExampleProjectUITests-resources.sh"; sourceTree = "<group>"; };
 		05043CB2A0019AB47316270D01C0A60C /* Pods-ImageOpenTransitionExampleProjectUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImageOpenTransitionExampleProjectUITests-frameworks.sh"; sourceTree = "<group>"; };
 		08976F9231B9B17ADC3E683E6EA07096 /* Pods-ImageOpenTransitionExampleProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageOpenTransitionExampleProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		09137CAAA05ACCE2EB9D1366DCB67629 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EC6C20C9EB068D1A365D84E92304A0E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F6E8A06695E41573F6636891BE5C496 /* ImageOpenTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageOpenTransition.xcconfig; sourceTree = "<group>"; };
 		19C240D61C6FCFB9A72F56A3906984D6 /* Pods-ImageOpenTransitionExampleProjectUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ImageOpenTransitionExampleProjectUITests.modulemap"; sourceTree = "<group>"; };
 		1C1121B24D1BBAECD0D2AF2D013981B0 /* Pods-ImageOpenTransitionExampleProject-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImageOpenTransitionExampleProject-frameworks.sh"; sourceTree = "<group>"; };
-		1FC864CB321C30C92297FB5BB96DB737 /* crossroads-destiny-clip-4x3.jpg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.jpeg; name = "crossroads-destiny-clip-4x3.jpg"; path = "ImageOpenTransition/crossroads-destiny-clip-4x3.jpg"; sourceTree = "<group>"; };
+		1ECD7FF168667B571C42C204F92BBFD9 /* ImageScaleTransitionPresent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageScaleTransitionPresent.swift; sourceTree = "<group>"; };
 		214EB9A0EDD874383B074A7DF6917FA2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		291F01B0276A6B6983C8C587503A3F1A /* ImageOpenTransition.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = ImageOpenTransition.podspec; sourceTree = "<group>"; };
 		2BEB1EABB0C635CB6EF22C9287E2BF05 /* Pods-ImageOpenTransitionExampleProjectTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImageOpenTransitionExampleProjectTests-frameworks.sh"; sourceTree = "<group>"; };
+		2EB6CC4DC4A674DE74B084CE412E0423 /* ImageScaleTransitionDismiss.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageScaleTransitionDismiss.swift; sourceTree = "<group>"; };
+		31B49FDE910AE67A44431F1B69B71ACA /* ImageOpenTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageOpenTransition-umbrella.h"; sourceTree = "<group>"; };
 		31D65A0C7116E486BD2A749155490652 /* Pods-ImageOpenTransitionExampleProjectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ImageOpenTransitionExampleProjectTests-dummy.m"; sourceTree = "<group>"; };
 		3441F94DBF12CC5D3E1D141681B718A2 /* Pods-ImageOpenTransitionExampleProject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ImageOpenTransitionExampleProject-umbrella.h"; sourceTree = "<group>"; };
 		3A71391C8690249DA650A0273D8960DE /* Pods-ImageOpenTransitionExampleProject-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImageOpenTransitionExampleProject-resources.sh"; sourceTree = "<group>"; };
 		3AC446AEB4D7AF2E2A2FF31605EC6A2B /* Pods_ImageOpenTransitionExampleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageOpenTransitionExampleProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D8978FD55151EFACE288C197919770F /* Pods-ImageOpenTransitionExampleProject-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ImageOpenTransitionExampleProject-acknowledgements.plist"; sourceTree = "<group>"; };
+		4D7F889BF21CCAE60A35F0EEBE1B6522 /* Delay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		4D85467D361D901D29A95FBF6DF73E5C /* Pods-ImageOpenTransitionExampleProjectTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImageOpenTransitionExampleProjectTests-resources.sh"; sourceTree = "<group>"; };
 		51ADC3E3EB68F522C527EFD4A4BC77D3 /* Pods-ImageOpenTransitionExampleProjectUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ImageOpenTransitionExampleProjectUITests-umbrella.h"; sourceTree = "<group>"; };
-		56EA4BD3F709B829629936E7159D0AE8 /* ImageOpenTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ImageOpenTransition.h; path = ImageOpenTransition/ImageOpenTransition.h; sourceTree = "<group>"; };
-		65C55AD3F6E4E80613F658CB64B0B72C /* ImageScaleTransitionDismiss.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageScaleTransitionDismiss.swift; path = ImageOpenTransition/ImageScaleTransitionDismiss.swift; sourceTree = "<group>"; };
+		5D9AAF108EC831B3402D62D1299BA914 /* ImageScaleTransitionObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageScaleTransitionObject.swift; sourceTree = "<group>"; };
+		5E616E7C34FFE09B90C0A74F7F50EE39 /* windows-xp-background-image-jpg.jpg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.jpeg; path = "windows-xp-background-image-jpg.jpg"; sourceTree = "<group>"; };
 		6883A9B0616FE003FC18D3A795FF232C /* Pods-ImageOpenTransitionExampleProject.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ImageOpenTransitionExampleProject.modulemap"; sourceTree = "<group>"; };
 		7062011751DCAFD3083601C0EE8EE94B /* Pods_ImageOpenTransitionExampleProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageOpenTransitionExampleProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		738A3356BC6A34F785F96FC33DC3ED49 /* Pods-ImageOpenTransitionExampleProjectTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ImageOpenTransitionExampleProjectTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7F87301BB7092E513F7AF0DD77395D7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		808035BAE4F2F22CD320ED805164D6DB /* windows-xp-background-image-jpg.jpg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.jpeg; name = "windows-xp-background-image-jpg.jpg"; path = "ImageOpenTransition/windows-xp-background-image-jpg.jpg"; sourceTree = "<group>"; };
+		81DCA794CAB8443F05352095D1223BF3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82F9839754A47335B1867E258117952C /* ImageScaleTransitionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageScaleTransitionDelegate.swift; sourceTree = "<group>"; };
+		83419F8448DA2E7C72EFF8D49BEB5D58 /* crossroads-destiny-clip-4x3.jpg */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.jpeg; path = "crossroads-destiny-clip-4x3.jpg"; sourceTree = "<group>"; };
 		86948D7A9D5358ABF9340B00E5B9F52F /* ImageOpenTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageOpenTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F97EE4B11EE9BD670BC3FFDB499FB86 /* Pods-ImageOpenTransitionExampleProjectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ImageOpenTransitionExampleProjectTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		952F1FB01BD7FA07C18C30D2BF2BCE42 /* ImageOpenTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ImageOpenTransition.modulemap; sourceTree = "<group>"; };
 		962B59A7AE07C8658C6331B60483AB19 /* Pods-ImageOpenTransitionExampleProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageOpenTransitionExampleProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		99AD874CF0A5928DB73F3AC4F3C3458B /* Pods-ImageOpenTransitionExampleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageOpenTransitionExampleProject.release.xcconfig"; sourceTree = "<group>"; };
 		9AD934C4532C3AC42FF054CAD80EFE56 /* Pods-ImageOpenTransitionExampleProject-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ImageOpenTransitionExampleProject-dummy.m"; sourceTree = "<group>"; };
 		9BBA86B59CD7C6EA254A84DFB4AEE763 /* Pods-ImageOpenTransitionExampleProjectUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ImageOpenTransitionExampleProjectUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A224D5503643A23758CDD2D7CE45A70F /* ImageOpenTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageOpenTransition-umbrella.h"; sourceTree = "<group>"; };
+		A1C74ACB1234F933B603863375AA9A85 /* ImageScaleTransitionExntentions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageScaleTransitionExntentions.swift; sourceTree = "<group>"; };
 		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A5B39BFF41C7C80805CDE2301C7DDB22 /* ImageScaleTransitionExntentions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageScaleTransitionExntentions.swift; path = ImageOpenTransition/ImageScaleTransitionExntentions.swift; sourceTree = "<group>"; };
 		A88DD3884675C6553F6EC555C9EE371C /* Pods-ImageOpenTransitionExampleProjectUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ImageOpenTransitionExampleProjectUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AB83BC0434C9E6454B74DA3593AC6E51 /* Pods-ImageOpenTransitionExampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageOpenTransitionExampleProject.debug.xcconfig"; sourceTree = "<group>"; };
-		AFE88BDB5F58D21C803063B4E101F9A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = ImageOpenTransition/Info.plist; sourceTree = "<group>"; };
-		BBBABC0BE21EBEFAE8CCC198229773D2 /* ImageOpenTransition.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ImageOpenTransition.modulemap; sourceTree = "<group>"; };
-		C23FA1CC76765BC84EBE81D7457AE3C5 /* ImageScaleTransitionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageScaleTransitionDelegate.swift; path = ImageOpenTransition/ImageScaleTransitionDelegate.swift; sourceTree = "<group>"; };
-		C438D298748CD64E4DA10AC2395DB12E /* ImageScaleTransitionPresent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageScaleTransitionPresent.swift; path = ImageOpenTransition/ImageScaleTransitionPresent.swift; sourceTree = "<group>"; };
-		C501F4714F69D694E5C50A127CA5F2A3 /* ImageScaleTransitionObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageScaleTransitionObject.swift; path = ImageOpenTransition/ImageScaleTransitionObject.swift; sourceTree = "<group>"; };
-		CF3F28F07C7710BE397611C73F5003F2 /* ImageOpenTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImageOpenTransition-dummy.m"; sourceTree = "<group>"; };
+		C00EC609619608D207984B810FB41559 /* ImageOpenTransition-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ImageOpenTransition-dummy.m"; sourceTree = "<group>"; };
+		C52F5561D8C9A6CA443CBFC3F2EBC408 /* ImageOpenTransition.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ImageOpenTransition.xcconfig; sourceTree = "<group>"; };
+		C7135654654F5A41F7ED56259C2D490B /* ImageOpenTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageOpenTransition-prefix.pch"; sourceTree = "<group>"; };
 		D2B796CD63CF5B316C91D638452202B4 /* Pods-ImageOpenTransitionExampleProject-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ImageOpenTransitionExampleProject-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D34E91E880302638877DC88C36A95DC9 /* ImageOpenTransition.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = ImageOpenTransition.podspec; sourceTree = "<group>"; };
+		E2030F6642C3AF9712F7A5E87E9D4CE1 /* ImageOpenTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ImageOpenTransition.h; sourceTree = "<group>"; };
 		E21EAA8EBDC6B0C6A360AD5085B647A1 /* Pods-ImageOpenTransitionExampleProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageOpenTransitionExampleProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E5864E7812A61438BA27F28C5FF6616B /* Pods-ImageOpenTransitionExampleProjectUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ImageOpenTransitionExampleProjectUITests-dummy.m"; sourceTree = "<group>"; };
 		E5D8D5264D495D26BB8CB22543F1319C /* Pods-ImageOpenTransitionExampleProjectTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ImageOpenTransitionExampleProjectTests-umbrella.h"; sourceTree = "<group>"; };
 		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E95993A896EACCFB8B43554795B90DE7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1AD48F2816C10815AFC70F2E4466E60 /* Pods-ImageOpenTransitionExampleProjectTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ImageOpenTransitionExampleProjectTests.modulemap"; sourceTree = "<group>"; };
 		F5F08826C253096A88CCC1CC47817553 /* Pods-ImageOpenTransitionExampleProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImageOpenTransitionExampleProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F9240BACA1F970A0ABC67DD588046BA0 /* ImageOpenTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ImageOpenTransition-prefix.pch"; sourceTree = "<group>"; };
 		F9642EE9B019347E140E36236CDC2772 /* Pods_ImageOpenTransitionExampleProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageOpenTransitionExampleProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DF7752E7875A6D266A80E9B7B2FA4341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F2E95E5672B17CE0256C2ECFA831E2 /* Foundation.framework in Frameworks */,
+				8FDCC8A38CF02DBB219D926A78891B97 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8E5CD5D8A37D624B373970895CDEC4E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -123,24 +134,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB2993C63483D0128AE207A70913952F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD8F889C2D60EB279238C6DF3E253A8E /* Foundation.framework in Frameworks */,
-				6D19A47DE724BD7D784EFF362159BC9D /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1ECCDC122FBE30E76D93AB9A1E7D66B6 /* Pods */ = {
+		28AB2632E5815F38AE00F16718213799 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A9B0FFAB91AE68AC1E0995D44238F848 /* ImageOpenTransition */,
+				952F1FB01BD7FA07C18C30D2BF2BCE42 /* ImageOpenTransition.modulemap */,
+				C52F5561D8C9A6CA443CBFC3F2EBC408 /* ImageOpenTransition.xcconfig */,
+				C00EC609619608D207984B810FB41559 /* ImageOpenTransition-dummy.m */,
+				C7135654654F5A41F7ED56259C2D490B /* ImageOpenTransition-prefix.pch */,
+				31B49FDE910AE67A44431F1B69B71ACA /* ImageOpenTransition-umbrella.h */,
+				E95993A896EACCFB8B43554795B90DE7 /* Info.plist */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "ImageOpenTransitionExampleProject/Pods/Target Support Files/ImageOpenTransition";
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -219,43 +227,47 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				825053E1904C87A79065506DE2233634 /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				1ECCDC122FBE30E76D93AB9A1E7D66B6 /* Pods */,
 				F7A6BBD79AB91A22D721064FEAFCA13C /* Products */,
 				6A9282EDF687FA05F1A2CC6D1CEB712A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A9B0FFAB91AE68AC1E0995D44238F848 /* ImageOpenTransition */ = {
+		825053E1904C87A79065506DE2233634 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1FC864CB321C30C92297FB5BB96DB737 /* crossroads-destiny-clip-4x3.jpg */,
-				56EA4BD3F709B829629936E7159D0AE8 /* ImageOpenTransition.h */,
-				D34E91E880302638877DC88C36A95DC9 /* ImageOpenTransition.podspec */,
-				C23FA1CC76765BC84EBE81D7457AE3C5 /* ImageScaleTransitionDelegate.swift */,
-				65C55AD3F6E4E80613F658CB64B0B72C /* ImageScaleTransitionDismiss.swift */,
-				A5B39BFF41C7C80805CDE2301C7DDB22 /* ImageScaleTransitionExntentions.swift */,
-				C501F4714F69D694E5C50A127CA5F2A3 /* ImageScaleTransitionObject.swift */,
-				C438D298748CD64E4DA10AC2395DB12E /* ImageScaleTransitionPresent.swift */,
-				AFE88BDB5F58D21C803063B4E101F9A6 /* Info.plist */,
-				808035BAE4F2F22CD320ED805164D6DB /* windows-xp-background-image-jpg.jpg */,
-				C63B8FD3BCB6CA629027D4E831359AD7 /* Support Files */,
+				CC8C815D4F990D797B59D8AFBC1E3738 /* ImageOpenTransition */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		ABBE1D508B723A224BC3A8E909EF410D /* ImageOpenTransition */ = {
+			isa = PBXGroup;
+			children = (
+				83419F8448DA2E7C72EFF8D49BEB5D58 /* crossroads-destiny-clip-4x3.jpg */,
+				4D7F889BF21CCAE60A35F0EEBE1B6522 /* Delay.swift */,
+				E2030F6642C3AF9712F7A5E87E9D4CE1 /* ImageOpenTransition.h */,
+				82F9839754A47335B1867E258117952C /* ImageScaleTransitionDelegate.swift */,
+				2EB6CC4DC4A674DE74B084CE412E0423 /* ImageScaleTransitionDismiss.swift */,
+				A1C74ACB1234F933B603863375AA9A85 /* ImageScaleTransitionExntentions.swift */,
+				5D9AAF108EC831B3402D62D1299BA914 /* ImageScaleTransitionObject.swift */,
+				1ECD7FF168667B571C42C204F92BBFD9 /* ImageScaleTransitionPresent.swift */,
+				81DCA794CAB8443F05352095D1223BF3 /* Info.plist */,
+				5E616E7C34FFE09B90C0A74F7F50EE39 /* windows-xp-background-image-jpg.jpg */,
 			);
 			path = ImageOpenTransition;
 			sourceTree = "<group>";
 		};
-		C63B8FD3BCB6CA629027D4E831359AD7 /* Support Files */ = {
+		CC8C815D4F990D797B59D8AFBC1E3738 /* ImageOpenTransition */ = {
 			isa = PBXGroup;
 			children = (
-				BBBABC0BE21EBEFAE8CCC198229773D2 /* ImageOpenTransition.modulemap */,
-				0F6E8A06695E41573F6636891BE5C496 /* ImageOpenTransition.xcconfig */,
-				CF3F28F07C7710BE397611C73F5003F2 /* ImageOpenTransition-dummy.m */,
-				F9240BACA1F970A0ABC67DD588046BA0 /* ImageOpenTransition-prefix.pch */,
-				A224D5503643A23758CDD2D7CE45A70F /* ImageOpenTransition-umbrella.h */,
-				09137CAAA05ACCE2EB9D1366DCB67629 /* Info.plist */,
+				291F01B0276A6B6983C8C587503A3F1A /* ImageOpenTransition.podspec */,
+				ABBE1D508B723A224BC3A8E909EF410D /* ImageOpenTransition */,
+				28AB2632E5815F38AE00F16718213799 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ImageOpenTransition";
+			name = ImageOpenTransition;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
@@ -305,18 +317,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED5EE0457CF28F53504872E15BA6C5DC /* Headers */ = {
+		F22366CB8EA5887472EBFEB89B822382 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1980F11AC0EAC50D89F48294C5DC6866 /* ImageOpenTransition-umbrella.h in Headers */,
-				F43832C60CDD78095E36BB4DD598D13F /* ImageOpenTransition.h in Headers */,
+				2B10127A6F77648257C85C1D7358A496 /* ImageOpenTransition-umbrella.h in Headers */,
+				EB2FA2004B47085BA0DA995CF2AFF9B6 /* ImageOpenTransition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		5B9213B48AFA628CA495368C2AE30FEB /* ImageOpenTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECCF6B936B637E544E2FCDC5258A4061 /* Build configuration list for PBXNativeTarget "ImageOpenTransition" */;
+			buildPhases = (
+				37EB8E7856C87985E7F569D05F398A98 /* Sources */,
+				DF7752E7875A6D266A80E9B7B2FA4341 /* Frameworks */,
+				F22366CB8EA5887472EBFEB89B822382 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageOpenTransition;
+			productName = ImageOpenTransition;
+			productReference = 86948D7A9D5358ABF9340B00E5B9F52F /* ImageOpenTransition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		6912543D154F05902B19E81A96B8CE9A /* Pods-ImageOpenTransitionExampleProjectTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7708405642A01FA9494086949D597334 /* Build configuration list for PBXNativeTarget "Pods-ImageOpenTransitionExampleProjectTests" */;
@@ -369,23 +398,6 @@
 			productReference = F9642EE9B019347E140E36236CDC2772 /* Pods_ImageOpenTransitionExampleProjectUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F88520F250E5E3BBB265D1BDE3DF6E26 /* ImageOpenTransition */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD7210C3FD15A182BDFC51FED2589531 /* Build configuration list for PBXNativeTarget "ImageOpenTransition" */;
-			buildPhases = (
-				38E525614CBE7D3E4765E4BB7FEF77DD /* Sources */,
-				FB2993C63483D0128AE207A70913952F /* Frameworks */,
-				ED5EE0457CF28F53504872E15BA6C5DC /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ImageOpenTransition;
-			productName = ImageOpenTransition;
-			productReference = 86948D7A9D5358ABF9340B00E5B9F52F /* ImageOpenTransition.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -407,7 +419,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F88520F250E5E3BBB265D1BDE3DF6E26 /* ImageOpenTransition */,
+				5B9213B48AFA628CA495368C2AE30FEB /* ImageOpenTransition */,
 				B3252DDB3DAF545803CF5F19777A08D1 /* Pods-ImageOpenTransitionExampleProject */,
 				6912543D154F05902B19E81A96B8CE9A /* Pods-ImageOpenTransitionExampleProjectTests */,
 				C1DE1CCA4227857B3D0AF01F5BECE12C /* Pods-ImageOpenTransitionExampleProjectUITests */,
@@ -424,20 +436,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38E525614CBE7D3E4765E4BB7FEF77DD /* Sources */ = {
+		37EB8E7856C87985E7F569D05F398A98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43F0CE61C4484939F1BC7DFE9A48D24A /* crossroads-destiny-clip-4x3.jpg in Sources */,
-				087CFDA37FFA1B4BD668B5D1875CCB82 /* ImageOpenTransition-dummy.m in Sources */,
-				C2C55E3D3BE88AA6BD735776EA792886 /* ImageOpenTransition.podspec in Sources */,
-				012E51588EA7DDD9E7DD27DE0F10FEB6 /* ImageScaleTransitionDelegate.swift in Sources */,
-				1E8FE3CD7D30D3C519AD9DDE11BC9EBA /* ImageScaleTransitionDismiss.swift in Sources */,
-				6DEC4A028BF7ADECC3AB459A3F3B4EAD /* ImageScaleTransitionExntentions.swift in Sources */,
-				9BD56F1481731C473D962F338C2E46E6 /* ImageScaleTransitionObject.swift in Sources */,
-				E69EC8E0A322F8CD5B4736DD8E6979D9 /* ImageScaleTransitionPresent.swift in Sources */,
-				4E85D8BA27D2E5B810D5128830920C44 /* Info.plist in Sources */,
-				8F023B4E5FB853BBC3F9E13E25014E32 /* windows-xp-background-image-jpg.jpg in Sources */,
+				E339B3F18FE9067CFA6F2AB24FF7E3E1 /* crossroads-destiny-clip-4x3.jpg in Sources */,
+				54162840291FBF1E50D5590E92CB0B43 /* Delay.swift in Sources */,
+				F7E2815DA507BEB92BD90DB5D8F8A6D4 /* ImageOpenTransition-dummy.m in Sources */,
+				A50E700401A13A9E4D16B731629E546F /* ImageOpenTransition.podspec in Sources */,
+				BE4B97DE76E8ACF6E18DACBA349BF61B /* ImageScaleTransitionDelegate.swift in Sources */,
+				5668F528C7B25FC773DD7BE8C3A23A09 /* ImageScaleTransitionDismiss.swift in Sources */,
+				415B30A489D86DC898588D803E9573A7 /* ImageScaleTransitionExntentions.swift in Sources */,
+				67A1812235251D910722E6F9D1F8F1EA /* ImageScaleTransitionObject.swift in Sources */,
+				82BD363F1CAFA8A124C1B9D385A73BEA /* ImageScaleTransitionPresent.swift in Sources */,
+				FCD36945936C30EF133F905A47042991 /* Info.plist in Sources */,
+				419E7B72978B9D6332BF8649EED7ADCC /* windows-xp-background-image-jpg.jpg in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,42 +476,12 @@
 		3D40C2DCF5712A17A511B7636B759A2F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ImageOpenTransition;
-			target = F88520F250E5E3BBB265D1BDE3DF6E26 /* ImageOpenTransition */;
+			target = 5B9213B48AFA628CA495368C2AE30FEB /* ImageOpenTransition */;
 			targetProxy = 28975EF32B2043CCF9B1D80ADFEB78E2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0569A66467CB4607FA518BB279D5CFB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F6E8A06695E41573F6636891BE5C496 /* ImageOpenTransition.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ImageOpenTransition/ImageOpenTransition-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ImageOpenTransition/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ImageOpenTransition/ImageOpenTransition.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ImageOpenTransition;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		1A563BAFBED33DA75A539A5938C30F27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E21EAA8EBDC6B0C6A360AD5085B647A1 /* Pods-ImageOpenTransitionExampleProjectTests.debug.xcconfig */;
@@ -745,6 +728,36 @@
 			};
 			name = Release;
 		};
+		68B17A76428AD2ADAACEA275350A17FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52F5561D8C9A6CA443CBFC3F2EBC408 /* ImageOpenTransition.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ImageOpenTransition/ImageOpenTransition-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageOpenTransition/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ImageOpenTransition/ImageOpenTransition.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ImageOpenTransition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		6A1832177C8DDB65CFF74ECEF88C4384 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 08976F9231B9B17ADC3E683E6EA07096 /* Pods-ImageOpenTransitionExampleProjectUITests.debug.xcconfig */;
@@ -778,9 +791,9 @@
 			};
 			name = Debug;
 		};
-		EF70A1CB5AAE537528AF056C56CBD4DA /* Release */ = {
+		DB85CE57DD0E4B2356D6B4C47BEAB381 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F6E8A06695E41573F6636891BE5C496 /* ImageOpenTransition.xcconfig */;
+			baseConfigurationReference = C52F5561D8C9A6CA443CBFC3F2EBC408 /* ImageOpenTransition.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -846,11 +859,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD7210C3FD15A182BDFC51FED2589531 /* Build configuration list for PBXNativeTarget "ImageOpenTransition" */ = {
+		ECCF6B936B637E544E2FCDC5258A4061 /* Build configuration list for PBXNativeTarget "ImageOpenTransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0569A66467CB4607FA518BB279D5CFB5 /* Debug */,
-				EF70A1CB5AAE537528AF056C56CBD4DA /* Release */,
+				68B17A76428AD2ADAACEA275350A17FC /* Debug */,
+				DB85CE57DD0E4B2356D6B4C47BEAB381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

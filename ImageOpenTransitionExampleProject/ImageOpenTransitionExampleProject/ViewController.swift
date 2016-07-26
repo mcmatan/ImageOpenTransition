@@ -59,7 +59,7 @@ import ImageOpenTransition
             
             
             //No StoryBoard:
-            self.transitionNoStoryBoard(cell, usingNavigationController: usingNavigationController)
+            //self.transitionNoStoryBoard(cell, usingNavigationController: usingNavigationController)
             
             self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
             
