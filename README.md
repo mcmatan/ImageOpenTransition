@@ -70,7 +70,7 @@ You can use it in cases the UIImageView you would like to animate to, has no fra
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ImageScaleTransition'
+pod 'ImageOpenTransition'
 ```
 
 #### Manually
