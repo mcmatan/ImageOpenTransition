@@ -43,6 +43,7 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
         
         if self.usingNavigationController == true && toViewController?.navigationController?.navigationBar.translucent == false {
             toViewController!.view.frame.origin.y += (toViewController?.heightOfNavigationControllerAndStatusAtViewController())!
+            toViewController!.view.frame.size.height -= (toViewController?.navigationController?.navigationBar.frame.size.height)!
         }
         
         for transitionObject in self.transitionObjects {
