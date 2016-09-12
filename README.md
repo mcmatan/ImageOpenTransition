@@ -44,7 +44,7 @@ self.imageScalePresentTransition = ImageScaleTransitionDelegate(transitionObject
 
 ## Usage
 
-* Create "ImageScaleTransitionObject" For each image you woould like to animate.
+* Create "ImageScaleTransitionObject" For each image you would like to animate.
 Pass the UIImageView to animate from, and the UIImageView to animate to.
 
 
