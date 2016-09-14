@@ -265,13 +265,16 @@
 				TargetAttributes = {
 					ED409D6F1D377006002C50A4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					ED409D831D377006002C50A4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = ED409D6F1D377006002C50A4;
 					};
 					ED409D8E1D377006002C50A4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = ED409D6F1D377006002C50A4;
 					};
 				};
@@ -629,6 +632,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc.JVID.ImageOpenTransitionExampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7c603ede-813f-426b-9acf-ecd9208e16cd";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -644,6 +648,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc.JVID.ImageOpenTransitionExampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7c603ede-813f-426b-9acf-ecd9208e16cd";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -656,6 +661,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JVID.ImageOpenTransitionExampleProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageOpenTransitionExampleProject.app/ImageOpenTransitionExampleProject";
 			};
 			name = Debug;
@@ -669,6 +675,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JVID.ImageOpenTransitionExampleProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageOpenTransitionExampleProject.app/ImageOpenTransitionExampleProject";
 			};
 			name = Release;
@@ -681,6 +688,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JVID.ImageOpenTransitionExampleProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ImageOpenTransitionExampleProject;
 			};
 			name = Debug;
@@ -693,6 +701,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JVID.ImageOpenTransitionExampleProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ImageOpenTransitionExampleProject;
 			};
 			name = Release;

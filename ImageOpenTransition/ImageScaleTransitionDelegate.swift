@@ -23,38 +23,38 @@ import UIKit
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
  */
 
-public class ImageScaleTransitionDelegate : NSObject , UIViewControllerTransitioningDelegate, UINavigationControllerDelegate {
+open class ImageScaleTransitionDelegate : NSObject , UIViewControllerTransitioningDelegate, UINavigationControllerDelegate {
     var transitionObjects : Array<ImageScaleTransitionObject>!
     var usingNavigationController : Bool
-    var duration: NSTimeInterval
-    public var fadeOutAnimationDuration : NSTimeInterval = 0.1 //After animation happends, this is the fade out of the image copy.
-    public var fadeOutAnimationDelayPresent : NSTimeInterval = 0.1 //After animation happends, this is the delay before fade out of the image, use if original image takes time to load.
-    public var fadeOutAnimationDelayDismiss : NSTimeInterval = 0.1 //After animation happends, this is the delay before fade out of the image, use if original image takes time to load.
-    public var fromViewControllerScaleAnimation : CGFloat = 1.0 //When animation opens viewController, the view has a scale animation to make it zoom in. Make 1.0 for turning off.
+    var duration: TimeInterval
+    open var fadeOutAnimationDuration : TimeInterval = 0.1 //After animation happends, this is the fade out of the image copy.
+    open var fadeOutAnimationDelayPresent : TimeInterval = 0.1 //After animation happends, this is the delay before fade out of the image, use if original image takes time to load.
+    open var fadeOutAnimationDelayDismiss : TimeInterval = 0.1 //After animation happends, this is the delay before fade out of the image, use if original image takes time to load.
+    open var fromViewControllerScaleAnimation : CGFloat = 1.0 //When animation opens viewController, the view has a scale animation to make it zoom in. Make 1.0 for turning off.
     
-    public init(transitionObjects : Array<ImageScaleTransitionObject>, usingNavigationController : Bool, duration: NSTimeInterval) {
+    public init(transitionObjects : Array<ImageScaleTransitionObject>, usingNavigationController : Bool, duration: TimeInterval) {
         self.transitionObjects = transitionObjects
         self.usingNavigationController = usingNavigationController
         self.duration = duration
     }
     
-    public final func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public final func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return self.createImageScaleTransitionPresent()
     }
     
-    public final func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public final func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return self.createImageScaleTransitionDismiss()
     }
     
     //MARK: Navigation controller transition
-    public final func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public final func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         switch operation {
-        case .Pop:
+        case .pop:
             return self.createImageScaleTransitionDismiss()
-        case .Push:
+        case .push:
             return self.createImageScaleTransitionPresent()
-        case .None:
+        case .none:
             return nil
         }
     }
