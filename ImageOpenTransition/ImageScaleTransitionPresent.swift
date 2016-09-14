@@ -39,7 +39,7 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
         let containerView = transitionContext.containerView()
         
         toViewController!.view.alpha = alphaZero
-        containerView!.addSubview((toViewController!.view)!)
+        containerView.addSubview((toViewController!.view)!)
         
         if self.usingNavigationController == true && toViewController?.navigationController?.navigationBar.translucent == false {
             toViewController!.view.frame.origin.y += (toViewController?.heightOfNavigationControllerAndStatusAtViewController())!
@@ -47,7 +47,7 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
         }
         
         for transitionObject in self.transitionObjects {
-            self.animateTransitionObject(transitionObject, fromViewController: fromViewController!, toViewController: toViewController!, containerView: containerView!)
+            self.animateTransitionObject(transitionObject, fromViewController: fromViewController!, toViewController: toViewController!, containerView: containerView)
         }
 
         let scaleUp = CGAffineTransformMakeScale(self.fromViewControllerScaleAnimation, self.fromViewControllerScaleAnimation);

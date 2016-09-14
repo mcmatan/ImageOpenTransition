@@ -30,7 +30,7 @@ extension UIViewController {
 extension UIImage {
     
     func copyMe()->UIImage {
-        let newCgIm = CGImageCreateCopy(self.CGImage)
+        let newCgIm = CGImageCreateCopy(self.CGImage!)
         let newImage = UIImage(CGImage: newCgIm!, scale: self.scale, orientation: self.imageOrientation)
         return newImage
     }

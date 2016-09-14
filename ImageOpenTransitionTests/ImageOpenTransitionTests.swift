@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import ImageOpenTransition
+
 
 class ImageOpenTransitionTests: XCTestCase {
     

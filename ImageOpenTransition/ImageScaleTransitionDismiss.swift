@@ -37,14 +37,14 @@ class ImageScaleTransitionDismiss : NSObject , UIViewControllerAnimatedTransitio
         let containerView = transitionContext.containerView()
 
         if self.usingNavigationController == true {
-            containerView!.addSubview((toViewController!.view)!)
+            containerView.addSubview((toViewController!.view)!)
         }
         
         fromViewController!.view.alpha = 1
-        containerView!.addSubview((fromViewController!.view)!)
+        containerView.addSubview((fromViewController!.view)!)
 
         for transitionObject in self.transitionObjects {
-            self.animateTransitionObject(transitionObject, fromViewController: fromViewController!, toViewController: toViewController!, containerView: containerView!)
+            self.animateTransitionObject(transitionObject, fromViewController: fromViewController!, toViewController: toViewController!, containerView: containerView)
         }
 
         UIView.animateWithDuration(self.duration, animations: {
@@ -67,11 +67,11 @@ class ImageScaleTransitionDismiss : NSObject , UIViewControllerAnimatedTransitio
         transitionObject.viewToAnimateTo.hidden = true
         transitionObject.viewToAnimateFrom.hidden = true
 
-        let animationDuration = transitionObject.duration
+        _ = transitionObject.duration
         
-        var viewToAnimateFromCopy = self.getImageFromImageScaleTransitionObject(transitionObject)
+        let viewToAnimateFromCopy = self.getImageFromImageScaleTransitionObject(transitionObject)
         viewToAnimateFromCopy.frame = self.startFrame(transitionObject, withNavigationController: self.usingNavigationController, controllerAnimatingFrom: fromViewController ,controllerAnimatingTo: toViewController)
-        var viewEndFrame = self.endFrame(transitionObject, containerView: containerView).frame
+        let viewEndFrame = self.endFrame(transitionObject, containerView: containerView).frame
         if self.endFrame(transitionObject, containerView: containerView).hasSet == false {
             viewToAnimateFromCopy.hidden = true
         }
@@ -134,7 +134,7 @@ class ImageScaleTransitionDismiss : NSObject , UIViewControllerAnimatedTransitio
     
     func endFrame(transitionObject : ImageScaleTransitionObject, containerView : UIView)->(frame : CGRect , hasSet : Bool) {
         var viewEndFrame = transitionObject.viewToAnimateFrom.frame
-        if let fromViewSuperExists = transitionObject.viewToAnimateFrom.superview {
+        if transitionObject.viewToAnimateFrom.superview != nil {
             viewEndFrame = transitionObject.viewToAnimateFrom.superview!.convertRect(transitionObject.viewToAnimateFrom.frame, toView: containerView)
             return (viewEndFrame, true)
         } else {
