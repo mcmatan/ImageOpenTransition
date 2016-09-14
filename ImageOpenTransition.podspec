@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name              = 'ImageOpenTransition'
-s.version           = '0.1.3'
+s.version           = '0.1.4'
 s.summary           = 'ImageOpenTransition'
 s.homepage          = 'https://github.com/mcmatan/ImageOpenTransition'
 s.ios.deployment_target = '8.0'
