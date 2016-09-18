@@ -15,7 +15,7 @@ s.author            = {
 }
 s.source            = {
 :git => 'https://github.com/mcmatan/ImageOpenTransition.git', :tag => s.version.to_s }
-}
+
 s.framework = "UIKit"
 s.source_files      = 'ImageOpenTransition*' , 'Vendor/*', 'Resource/*', 'ImageOpenTransition/*'
 s.requires_arc      = true
