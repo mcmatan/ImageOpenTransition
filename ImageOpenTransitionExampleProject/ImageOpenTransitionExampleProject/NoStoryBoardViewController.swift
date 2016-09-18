@@ -18,12 +18,12 @@ class NoStoryBoardViewController : UIViewController {
         
         let avatarImageSize : CGFloat = 60
         let avatarYPoint : CGFloat = 160
-        let frameToAnimateToAvatar = CGRectMake((self.view.frame.size.width/2) - (avatarImageSize/2), avatarYPoint, avatarImageSize, avatarImageSize)
-        let frameToAnimateToCover = CGRectMake(0, 0, self.view.frame.size.width, 200)
+        let frameToAnimateToAvatar = CGRect(x:(self.view.frame.size.width/2) - (avatarImageSize/2),y: avatarYPoint,width: avatarImageSize,height: avatarImageSize)
+        let frameToAnimateToCover = CGRect(x: 0,y:  0,width:  self.view.frame.size.width , height:  200)
 
         self.imgCover = UIImageView()
         self.imgCover.image = UIImage(named: "windows-xp-background-image-jpg.jpg")
-        self.imgCover.contentMode = UIViewContentMode.ScaleAspectFill
+        self.imgCover.contentMode = UIViewContentMode.scaleAspectFill
         self.imgCover.clipsToBounds = true
         self.imgCover.frame = frameToAnimateToCover
         self.view.addSubview(self.imgCover)
@@ -31,10 +31,10 @@ class NoStoryBoardViewController : UIViewController {
         self.imgAvatar = UIImageView()
         self.imgAvatar.image = UIImage(named: "crossroads-destiny-clip-4x3.jpg")
         self.imgAvatar.frame = frameToAnimateToAvatar
-        self.imgAvatar.contentMode = UIViewContentMode.ScaleAspectFill
+        self.imgAvatar.contentMode = UIViewContentMode.scaleAspectFill
         self.imgAvatar.clipsToBounds = true
         self.view.addSubview(self.imgAvatar)
         
-        self.view.backgroundColor = UIColor.whiteColor()
+        self.view.backgroundColor = UIColor.white
     }
 }

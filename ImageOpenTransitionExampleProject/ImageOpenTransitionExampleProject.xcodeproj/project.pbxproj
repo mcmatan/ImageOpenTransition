@@ -629,6 +629,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc.JVID.ImageOpenTransitionExampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7c603ede-813f-426b-9acf-ecd9208e16cd";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -644,6 +645,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mc.JVID.ImageOpenTransitionExampleProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7c603ede-813f-426b-9acf-ecd9208e16cd";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -21,18 +21,18 @@ class DetailsViewController : UIViewController {
     
     @IBAction func btnDoneTaped(sender: AnyObject) {
         if let isNavigationController = self.navigationController {
-            isNavigationController.popViewControllerAnimated(true)
+            isNavigationController.popViewController(animated: true)
         } else {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
         }
     }
     
     
-    override func viewWillDisappear(animated: Bool) {
+    override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
 }

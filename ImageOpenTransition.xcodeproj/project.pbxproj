@@ -18,6 +18,7 @@
 		ED409D1E1D364F8E002C50A4 /* ImageScaleTransitionDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED409D1A1D364F8E002C50A4 /* ImageScaleTransitionDismiss.swift */; };
 		ED409D1F1D364F8E002C50A4 /* ImageScaleTransitionObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED409D1B1D364F8E002C50A4 /* ImageScaleTransitionObject.swift */; };
 		ED460C161D89867000E3BDA7 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED460C151D89867000E3BDA7 /* Delay.swift */; };
+		EDB595F01D8EA8A4000F3F20 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDB595EF1D8EA8A4000F3F20 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		ED409D1A1D364F8E002C50A4 /* ImageScaleTransitionDismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScaleTransitionDismiss.swift; sourceTree = "<group>"; };
 		ED409D1B1D364F8E002C50A4 /* ImageScaleTransitionObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScaleTransitionObject.swift; sourceTree = "<group>"; };
 		ED460C151D89867000E3BDA7 /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
+		EDB595EF1D8EA8A4000F3F20 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB595F01D8EA8A4000F3F20 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +75,7 @@
 				ED409CF91D364F38002C50A4 /* ImageOpenTransition */,
 				ED409D051D364F38002C50A4 /* ImageOpenTransitionTests */,
 				ED409CF81D364F38002C50A4 /* Products */,
+				EDB595EE1D8EA8A4000F3F20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +128,14 @@
 				ED460C151D89867000E3BDA7 /* Delay.swift */,
 			);
 			name = Exntetions;
+			sourceTree = "<group>";
+		};
+		EDB595EE1D8EA8A4000F3F20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDB595EF1D8EA8A4000F3F20 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,7 +390,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -397,7 +409,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JVID.ImageOpenTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -25,13 +25,13 @@ import ImageOpenTransition
             // Dispose of any resources that can be recreated.
         }
         
-        override func viewDidAppear(animated: Bool) {
+        override func viewDidAppear(_ animated: Bool) {
             super.viewDidAppear(animated)
             
         }
         
-        func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCellWithIdentifier("Cell")
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
             if let isCell = cell {
                 return isCell
             } else {
@@ -40,41 +40,41 @@ import ImageOpenTransition
             }
         }
         
-        func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
             return 10
         }
         
-        func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             
             var usingNavigationController = false
             if let _ = self.navigationController {
                 usingNavigationController = true
             }
             
-            let cell = tableView.cellForRowAtIndexPath(indexPath) as! ViewControllerCell
+            let cell = tableView.cellForRow(at: indexPath) as! ViewControllerCell
             
             
             //With StoryBoard:
-            self.transitionWithStoryBoard(cell, usingNavigationController: usingNavigationController)
+            self.transitionWithStoryBoard(cell: cell, usingNavigationController: usingNavigationController)
             
             
             //No StoryBoard:
             //self.transitionNoStoryBoard(cell, usingNavigationController: usingNavigationController)
             
-            self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            self.tableView.deselectRow(at: indexPath, animated: true)
             
         }
         
         
         func transitionWithStoryBoard(cell : ViewControllerCell, usingNavigationController : Bool) {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewControllerWithIdentifier("DetailsViewController") as! DetailsViewController
+            let vc = storyboard.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
             vc.loadView()
             
             let avatarImageSize : CGFloat = 60
             let avatarYPoint : CGFloat = 160
-            let frameToAnimateToAvatar = CGRectMake((self.view.frame.size.width/2) - (avatarImageSize/2), avatarYPoint, avatarImageSize, avatarImageSize)
-            let frameToAnimateToCover = CGRectMake(0, 0, self.view.frame.size.width, 200)
+            let frameToAnimateToAvatar = CGRect(x: (self.view.frame.size.width/2) - (avatarImageSize/2), y:  avatarYPoint, width: avatarImageSize, height: avatarImageSize)
+            let frameToAnimateToCover = CGRect(x: 0, y: 0, width:  self.view.frame.size.width, height:  200)
             
             let transitionObjectAvatar = ImageScaleTransitionObject(viewToAnimateFrom: cell.imgAvater, viewToAnimateTo: vc.imgAvatar, duration: 0.4, frameToAnimateTo: frameToAnimateToAvatar)
             let transitionObjectCover = ImageScaleTransitionObject(viewToAnimateFrom: cell.imgCover, viewToAnimateTo: vc.imgCover, duration: 0.4, frameToAnimateTo: frameToAnimateToCover)
@@ -86,8 +86,8 @@ import ImageOpenTransition
                 self.navigationController!.pushViewController(vc, animated: true)
             } else {
                 vc.transitioningDelegate = self.imageScalePresentTransition;
-                vc.modalPresentationStyle = UIModalPresentationStyle.Custom;
-                self.presentViewController(vc, animated: true, completion: nil)
+                vc.modalPresentationStyle = UIModalPresentationStyle.custom;
+                self.present(vc, animated: true, completion: nil)
             }
             
         }
@@ -105,8 +105,8 @@ import ImageOpenTransition
                 self.navigationController!.pushViewController(self.noStoryBoardVC, animated: true)
             } else {
                 self.noStoryBoardVC.transitioningDelegate = self.imageScalePresentTransition;
-                self.noStoryBoardVC.modalPresentationStyle = UIModalPresentationStyle.Custom;
-                self.presentViewController(self.noStoryBoardVC, animated: true, completion: nil)
+                self.noStoryBoardVC.modalPresentationStyle = UIModalPresentationStyle.custom;
+                self.present(self.noStoryBoardVC, animated: true, completion: nil)
             }
         }
         
