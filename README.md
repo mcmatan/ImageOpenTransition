@@ -49,7 +49,7 @@ Pass the UIImageView to animate from, and the UIImageView to animate to.
 
 
 * You must pass the ImageView you would like to animate to. You can or allocate it before the controller is presented,
-or call "loadView", it's your choice.
+or call "loadViewIfNeeded", it's your choice.
 
 * The frame you would like to animate to, is optional. 
 You can use it in cases the UIImageView you would like to animate to, has no frame yet, and you rather calculate it programmatically.
