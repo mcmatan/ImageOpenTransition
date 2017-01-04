@@ -108,12 +108,12 @@ class ImageScaleTransitionDismiss : NSObject , UIViewControllerAnimatedTransitio
         var viewToAnimateFromCopy : UIImageView!
         if let isImageInViewToAnimateFrom = transitionObject.viewToAnimateFrom.image {
             viewToAnimateFromCopy = UIImageView(image: isImageInViewToAnimateFrom.copyMe())
-            viewToAnimateFromCopy.contentMode = UIViewContentMode.scaleAspectFill
+            viewToAnimateFromCopy.contentMode = transitionObject.viewToAnimateFrom.contentMode
         }
         
         if let isImageInViewToAnimateTo = transitionObject.viewToAnimateTo.image {
             viewToAnimateFromCopy = UIImageView(image: isImageInViewToAnimateTo.copyMe())
-            viewToAnimateFromCopy.contentMode = UIViewContentMode.scaleAspectFill
+            viewToAnimateFromCopy.contentMode = transitionObject.viewToAnimateTo.contentMode
         }
         
         assert(viewToAnimateFromCopy != nil, "Trying to animate with no Image")

@@ -80,7 +80,7 @@ class ImageScaleTransitionPresent : NSObject , UIViewControllerAnimatedTransitio
         assert(transitionObject.viewToAnimateFrom.image != nil, "Trying to animate with no Image")
         
         let viewToAnimateFromCopy = UIImageView(image: transitionObject.viewToAnimateFrom.image!.copyMe())
-        viewToAnimateFromCopy.contentMode = UIViewContentMode.scaleAspectFill
+        viewToAnimateFromCopy.contentMode = transitionObject.viewToAnimateFrom.contentMode
         
         viewToAnimateFromCopy.frame = transitionObject.viewToAnimateFrom.superview!.convert(transitionObject.viewToAnimateFrom.frame, to: containerView)
         
