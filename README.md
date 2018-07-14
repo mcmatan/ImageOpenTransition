@@ -4,7 +4,7 @@
 [![Language](https://img.shields.io/badge/language-swift-orange.svg?style=flat)](https://developer.apple.com/swift)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/matteocrippa/awesome-swift#animation)
 
-<p align = "center"><img src="https://s31.postimg.org/wc8lnw00r/Icon_Image_Open_Transition_3x.png" alt="ImageOpenTransition Icon"/></p>
+<p align = "center"><img src="https://image.ibb.co/iH9bwo/download.jpg" alt="ImageOpenTransition Icon"/></p>
 
 
 ## Description
